@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+.next
+
+# Production
+/build
+dist
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Local env files
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Sensitive files
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!next.config.js
+
+# API Keys and credentials
+Docs/API Keys.md
+*.json
+executive-dashboard-*.json
+client_secret_*.json
+
+# Temporary files
+clickup_spaces.txt
+verification*.log
+build_*.log
+.google_tokens.json
