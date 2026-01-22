@@ -1,11 +1,13 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { getAuthUrl, getTokens } from '@/lib/integrations/gmail-oauth'
+
+export const dynamic = 'force-dynamic'
 
 export async function GET() {
     try {
-        const tokens = getTokens()
+        const tokensExist = getTokens()
 
-        if (tokens) {
+        if (tokensExist) {
             return NextResponse.json({
                 success: true,
                 authenticated: true
