@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
-// Force rebuild
 const nextConfig = {
   experimental: {
-    serverComponentsExternalPackages: [''],
+    // Disable static page generation for all pages
+    isrMemoryCacheSize: 0,
   },
+  // Skip static optimization for dynamic pages
+  output: 'standalone',
 }
 
 module.exports = nextConfig
